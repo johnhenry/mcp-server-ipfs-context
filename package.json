@@ -1,0 +1,36 @@
+{
+  "name": "mcp-ipfs-context",
+  "version": "0.0.0",
+  "main": "stdio.mjs",
+  "description": "An MCP that uses IPFS to store and retrieve context between sessions.",
+  "homepage": "https://github.com/johnhenry/mcp-ipfs-context",
+  "author": "John Henry <john@iamjohnhenry.com>",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "mcp-ipfs-context": "./stdio.mjs"
+  },
+  "type": "module",
+  "keywords": [
+    "mcp",
+    "server",
+    "memory",
+    "context",
+    "instructions",
+    "handoff"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@helia/strings": "^4.0.3",
+    "@helia/unixfs": "^5.0.0",
+    "@modelcontextprotocol/sdk": "^1.10.1",
+    "helia": "^5.3.0",
+    "mcp-declarative-server": "^0.0.0",
+    "multiformats": "^13.3.2",
+    "truish": "^0.0.0",
+    "yargs": "^17.7.2",
+    "zod": "^3.24.3"
+  },
+  "port": 8080
+}
