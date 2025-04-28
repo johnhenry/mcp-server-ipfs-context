@@ -1,15 +1,15 @@
 {
-  "name": "mcp-ipfs-context",
+  "name": "mcp-server-ipfs-context",
   "version": "0.0.0",
   "main": "stdio.mjs",
   "description": "An MCP that uses IPFS to store and retrieve context between sessions.",
-  "homepage": "https://github.com/johnhenry/mcp-ipfs-context",
+  "homepage": "https://github.com/johnhenry/mcp-server-ipfs-context",
   "author": "John Henry <john@iamjohnhenry.com>",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "mcp-ipfs-context": "./stdio.mjs"
+    "mcp-server-ipfs-context": "./stdio.mjs"
   },
   "type": "module",
   "keywords": [

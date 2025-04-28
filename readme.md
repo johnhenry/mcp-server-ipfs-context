@@ -1,4 +1,4 @@
-# MCP IPFS Context
+# MCP Server: IPFS Context
 
 > [!WARNING]  
 > Information is stored publically on IPFS network. Do not store sensitive information.
@@ -84,7 +84,7 @@ Integrate into your MCP client configuration:
   "mcpServers": {
     "vimble-mcp": {
       "command": "npx",
-      "args": ["-y", "mcp-ipfs-context", "<path-to-context-storage>"]
+      "args": ["-y", "mcp-server-ipfs-context", "<path-to-context-storage>"]
     }
   }
 }
