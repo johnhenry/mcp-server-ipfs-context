@@ -1,5 +1,7 @@
 # MCP Server: IPFS Context
 
+> Previously published on npm as `mcp-server-ipfs-context` (unscoped). That name is no longer updated; use `@johnhenry/mcp-server-ipfs-context`.
+
 > [!WARNING]  
 > Information is stored publically on IPFS network. Do not store sensitive information.
 
@@ -82,9 +84,9 @@ Integrate into your MCP client configuration:
 ```json
 {
   "mcpServers": {
-    "vimble-mcp": {
+    "mcp-server-ipfs-context": {
       "command": "npx",
-      "args": ["-y", "mcp-server-ipfs-context", "<path-to-context-storage>"]
+      "args": ["-y", "@johnhenry/mcp-server-ipfs-context", "<path-to-context-storage>"]
     }
   }
 }
@@ -95,7 +97,7 @@ Integrate into your MCP client configuration:
 ```json
 {
   "mcpServers": {
-    "vimble-mcp": {
+    "mcp-server-ipfs-context": {
       "command": "<path-to-node>",
       "args": [
         "<this-directory>/stdio.mjs",

@@ -1,17 +1,23 @@
 {
-  "name": "mcp-server-ipfs-context",
-  "version": "0.0.0",
-  "main": "stdio.mjs",
+  "name": "@johnhenry/mcp-server-ipfs-context",
+  "version": "0.1.0",
   "description": "An MCP that uses IPFS to store and retrieve context between sessions.",
-  "homepage": "https://github.com/johnhenry/mcp-server-ipfs-context",
-  "author": "John Henry <john@iamjohnhenry.com>",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "type": "module",
+  "main": "stdio.mjs",
   "bin": {
     "mcp-server-ipfs-context": "./stdio.mjs"
   },
-  "type": "module",
+  "files": [
+    "index.mjs",
+    "prompts.mjs",
+    "resources.mjs",
+    "stdio.mjs",
+    "tools.mjs",
+    "utility/"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
   "keywords": [
     "mcp",
     "server",
@@ -20,17 +26,32 @@
     "instructions",
     "handoff"
   ],
+  "author": "John Henry <john@iamjohnhenry.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@helia/strings": "^4.0.3",
     "@helia/unixfs": "^5.0.0",
     "@modelcontextprotocol/sdk": "^1.10.1",
     "helia": "^5.3.0",
-    "mcp-declarative-server": "^0.0.0",
     "multiformats": "^13.3.2",
-    "truish": "^0.0.0",
     "yargs": "^17.7.2",
-    "zod": "^3.24.3"
+    "zod": "^3.24.3",
+    "@johnhenry/mcp-declarative-server": "^0.1.0",
+    "@johnhenry/truish": "^0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnhenry/mcp-server-ipfs-context.git"
+  },
+  "homepage": "https://github.com/johnhenry/mcp-server-ipfs-context#readme",
+  "bugs": {
+    "url": "https://github.com/johnhenry/mcp-server-ipfs-context/issues"
   },
   "port": 8080
 }

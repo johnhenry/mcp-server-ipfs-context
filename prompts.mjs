@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import truish from "truish";
+import truish from "@johnhenry/truish";
 
 const generic = () => `# Conversation Summary Generator
 
